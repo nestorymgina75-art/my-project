@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LUKETULO AGROVET</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🌾 LUKETULO AGROVET 🌾</h1>
+    <p>Bidhaa Bora za Kilimo na Mifugo</p>
+    <button id="adminBtn">Ingia Admin</button>
+  </header>
+
+  <main>
+    <h2>Bidhaa Zetu</h2>
+    <div id="productGallery" class="gallery"></div>
+  </main>
+
+  <!-- MODAL YA ADMIN -->
+  <div id="adminModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Sehemu ya Admin</h2>
+      <form id="productForm">
+        <input type="text" id="productName" placeholder="Jina la Bidhaa" required>
+        <input type="number" id="productPrice" placeholder="Bei TSh" required>
+        <textarea id="productLocation" placeholder="Mahali Inapatikana" required></textarea>
+        <input type="tel" id="productContact" placeholder="Namba ya Mawasiliano" required>
+        <input type="file" id="productImage" accept="image/*" required>
+        <button type="submit">Hifadhi Bidhaa</button>
+      </form>
+      <hr>
+      <h3>Bidhaa Zilizopo</h3>
+      <div id="adminProductList"></div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 LUKETULO AGROVET. Mawasiliano: 0710558608</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
